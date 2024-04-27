@@ -1,0 +1,66 @@
+@model CandiDate
+
+<div class = "display-6">
+    Basvuru
+</div>
+
+<form method="post" asp-action="apply">
+  <div class ="text-danger" asp-validation-summary="All"></div>
+    <div class="form-group my-2 ">
+
+      <label>Email</label>
+
+       <input name="Eamil" class = "form-control" />
+     </div>
+
+
+      <div class="form-group my-2 ">
+
+      <label>Adi</label>
+
+       <input name="Adi" class = "form-control" />
+     </div>
+
+     <div class="form-group my-2 ">
+
+      <label>SoyAdi</label>
+
+       <input name="SoyAdi" class = "form-control" />
+     </div>
+
+      <div class="form-group my-2 ">
+
+      <label>Yasi</label>
+     <select name="Yasi" class = "form-control">
+        <option value="seciniz">seciniz</option>
+        <option value="18">18</option>
+          <option value="19">19</option>
+            <option value="20">20</option>
+              <option value="21">21</option>
+                <option value="22">22</option>
+                  <option value="23">23</option>
+     </select>
+        
+     </div>
+
+     <fieldset>
+        <legend>lütfen bir kurs seçiniz</legend>
+        <p>
+            <input id ="mvc" type="radio" name="SectigiKurs" value ="ASP.NET CoreMVC" checked />
+            <label>ASP.NET CoreMVC</label>
+        </p>
+         <p>
+            <input id ="API" type="radio" name="SectigiKurs" value ="ASP.NET CoreAPI" />
+            <label>ASP.NET CoreAPI</label>
+        </p>
+         <p>
+            <input id ="blazor" type="radio" name="SectigiKurs" value ="Blazor" />
+            <label>Blazor</label>
+        </p>
+     </fieldset>
+
+    <div>
+        <button class="btn btn-primary" type="sumbit">Kaydet</button> 
+        <a class="btn btn-warning"href="/">Home</a>
+    </div>
+</form>

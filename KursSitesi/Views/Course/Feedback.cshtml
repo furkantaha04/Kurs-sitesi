@@ -1,0 +1,19 @@
+@model CandiDate
+
+<div>
+    <h3 class = "display-4">Tebrikler @Model.TamAdSoyAd</h3>
+    <p class="lead">Başvurunuz  <mark>onaylandi.</mark></p>
+     <p class="lead">Yaptiginiz başvuru için teşekkür ediyoruz</p>
+     <hr />
+     <blockquote class="blockquote">
+      başarili bir şekilde  @Model.SectigiKurs kursuna kayit oldunuz.
+     </blockquote>
+     <p class="text-muted">Başvurduğunuz tarih @Model.BasvuruTarihi.</p>
+   
+   <div class="btn-group">
+    <a class = "btn btn-outline-success" asp-action="Index">Applications</a>
+    <a class = "btn btn-outline-success" asp-action="Index" asp-controller="Home">Home</a>
+    
+   </div>
+
+</div>
